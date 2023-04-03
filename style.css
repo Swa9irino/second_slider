@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+.slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+    
+  }
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    
+  }
+  .slide img{
+    transition: .5s;
+    border-radius: 10px;
+  }
+  .slide.active {
+    display: block;
+  }
+  .pagination {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .pagination button {
+    
+    width: 25px;
+    height: 4px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: .4s;
+    opacity: .7;
+  }
+  .pagination button.active {
+   opacity: 1;
+  }
+  .pagination button:hover{
+    transform: scale(1.2);
+  }
+  .prevBtn,
+  .nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 999;
+    border-radius: 3px;
+  }
+  .prevBtn {
+    left: 20px;
+    opacity: .6;
+    transition: .4s;
+  }
+  .prevBtn:hover{
+    opacity: 1;
+  }
+  .nextBtn {
+    right: 20px;
+    opacity: .6;
+    transition: .4s;
+  }
+  .nextBtn:hover{
+    opacity: 1;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    
+  }
+  .wrapper{
+    width: 700px;
+    height: 350px;
+    margin: 300px auto;
+    
+  }
+  .land{
+    background-color: rgb(173, 252, 127);
+   padding: 110px;
+    text-align: center;
+    font-size: 88px;
+    font-weight: 600;
+    line-height: 1;
+  }
+  .land p{
+    font-size: 22px;
+  }
+  
